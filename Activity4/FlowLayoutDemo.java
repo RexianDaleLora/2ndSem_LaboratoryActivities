@@ -1,0 +1,21 @@
+import java.awt.*;
+import javax.swing.*;
+
+public class FlowLayoutDemo {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("FlowLayout Demo");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(420, 200);
+
+        frame.setLayout(new FlowLayout(FlowLayout.LEFT,10,10));
+
+        frame.add(new JButton("One"));
+        frame.add(new JButton("Two"));
+        frame.add(new JButton("Three"));
+        frame.add(new JButton("Four"));
+        frame.add(new JButton("Five"));
+
+        frame.setLocationRelativeTo(null);
+        frame.setVisible(true);
+    }
+}
